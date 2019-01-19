@@ -23,7 +23,7 @@ Dotenv.load
 	end
 list_bonjour_monde 
 
-########Aime les 25 dernier post contenant le #bonjour_monde#####
+########Aime les 25 derniers posts contenant le #bonjour_monde#####
 def hashtag_bonjour_monde
 	client = login_twitter
 	client.search("#bonjour_monde", result_type: "recent").take(25).collect do |tweet|
